@@ -1,0 +1,229 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*-------------- header section start -----------------*/
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #2D25A0;
+}
+.container{
+    width: 1160px;
+    margin-top: 40px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: #fff; font-size: 12px;
+}
+.nav-anchor a{
+    margin-right: 20px;
+}
+.log-in{
+    background-color: #E02C6D;
+    padding: 5px 18px;
+}
+.log-in i{
+    margin: 0 10px;
+}
+.header-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.header-info h1{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.header-image .banner-image{
+    width: 556px;
+    height: 438px;
+    transition: transform 5s;
+}
+.header-info:hover .banner-image{
+    transform: scale(1.1);
+    box-shadow: 0px 0.5px 0.8px #210563;
+}
+
+/* ---------------blog section start-------------- */
+.main-blog{
+    display: flex;
+    justify-content: center;
+}
+.main-blog .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #eceaea;
+}
+.main-blog .article{
+    margin: 10px 10px;
+    background-color: #fff;
+    box-shadow: 5px 3px 3px #c9c6c6;
+}
+
+.article img{
+    width: 300px;
+    height: 256px;
+    margin: 10px;
+    transition: transform 2s;
+}
+.article h3{
+    margin: 10px 5px;
+    font-size: 28px;
+}
+.article p{
+    margin: 5px 10px;
+    text-align: justify;
+    color: #6C6C6C;
+    font-size: 14px;
+}
+.main-blog .article:hover img{
+    transform: scale(1.05);
+}
+
+/* -----------------highlight section start-------------------------- */
+
+.highlights-match{
+    display: flex;
+    justify-content: center;
+}
+.match-details{
+    display: flex;
+}
+.half-part{
+    padding: 30px;
+}
+iframe{
+    width: 560px;
+    height: 320px;
+}
+.match-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.match-details h3{
+    margin: 10px 5px;
+    font-size: 27px;
+}
+.match-details p{
+    margin: 5px 0 40px;
+    text-align: justify;
+    color: #6C6C6C;
+    font-size: 14px;
+}
+
+/* ---------------footer section style------------------ */
+
+.animation-social{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icon{
+    display: flex;
+    justify-content: center;
+}
+.animated-image img{
+    width: 485px;
+    height: cover;
+    margin: 50px 0;
+    transition: transform 3s;
+}
+.animated-image:hover img{
+    transform: scale(1.3);
+}
+.footer-icon span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon span i{
+    color: #969BAB;
+    font-size: 14px;
+}
+
+
+
+
+
+/* ------------Media Queries-------------------- */
+
+@media only screen and (max-width: 992px) {
+
+    nav{
+        justify-content: center;
+    }
+    
+    .header-info{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .header-title{
+        margin-bottom: 30px;
+    }
+    .main-blog .container{
+        grid-template-columns: repeat(2, 1fr);
+        background-color: #fff;
+        box-shadow: 5px 3px 3px #fffeee;
+    } 
+    .article{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .match-details{
+        flex-direction: column;
+    }
+    .match-details .info{
+        margin-left: 30px;
+    }
+  }
+  /* ---------Media queries for mobile devices------- */
+
+@media only screen and (max-width: 576px) {
+
+    nav span{
+        display: grid;
+        flex-direction: column;
+    }
+    nav .log-in{
+        width: 70px;
+        height: 20px;
+    }
+    
+    .main-blog .container{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    
+    .main-blog .article{
+        margin: 10px 10px;
+        background-color: #fff;
+        box-shadow: 5px 3px 3px #c9c6c6;
+    }
+    .match-details h3{
+        padding: 0 10px;
+    }
+    .match-details p{
+        padding: 0 10px;
+    }
+  }
